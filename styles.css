@@ -6,17 +6,20 @@
    h1 {
       font-family: "AlmarenaDisplayBold";
       font-size: 50pt;
+      color: #FFFFFF;
     }
     
     h2 {
         font-family: "AlmarenaDisplayBold";
         font-size: 38pt;
+        text-align: center;
     }
   
     h3 {
         font-family: "Almarena";
         font-weight: 500;
         font-size: 28pt;
+        text-align: center;
     }
 
     h4 {
@@ -24,10 +27,69 @@
         font-size: 16pt;
     }
 
+    h5 {
+      font-family: "AlmarenaDisplayBold";
+      font-size: 50pt;
+      color: #FFFFFF;
+      text-align: center;
+
+    }
+
+    nav,
+    #menu-checkbox {
+      display: none;
+    }
+
+    nav a {
+      display: block;
+      color: #FFFFFF;
+      text-decoration: none;
+      padding-block: 10px;
+      font-family: "Almarena";
+      font-size: 20px;
+    }
+
+    nav {
+      position: absolute;
+      background-color: #173D36;
+      padding: 20px 20px;
+      
+    }
+
+    header {
+      position: relative;
+      font-size: 1rem;
+    }
+
+    .logo {
+      width: auto;
+      height: 45px;
+    }
+
+    #menu-checkbox:checked ~ nav {
+      display: block;
+
+    }
+
   body {
       font-family: "Roboto", Verdana, Geneva, Tahoma, sans-serif
   }
   
+  .Hero-Section {
+    background-image: url(/Images/toomas-tartes-Yizrl9N_eDA-unsplash\ kopi.jpg);
+    background-size: cover;
+    background-position-x: center;
+    background-repeat: no-repeat;
+    min-height: 75vh;
+    position: relative;
+  }
+
+  .Hero-content{
+    position: absolute;
+    top: 100px;
+    left: 100px;
+  }
+
   .paragraph-one {
     font-family: "Almarena";
     font-size: 16px;
@@ -77,10 +139,114 @@
     color: #FFFFFF;
   }
 
-  .footer {
-    background-color: #EA543B;
-    padding-block: 20px;
-    padding-inline: 20px;
+  .container {
+    display: grid;
+    grid-template-columns: repeat(1fr);
+    margin-bottom: 40px;
+    
   }
 
+  .image-items {
+    width: 100%;
+    max-width: 1000px;
+    margin: auto;
+  }
+
+  .product-item {
+    flex: 2;
+    min-height: fit-content;
+    max-width: 450px;
+    border-radius: 12px;
+    border-style: solid;
+    border-color: black;
+    background-color: #FFFFFF;
+    padding: 40px;
+    margin-bottom: 20px;
+    margin-left: 20px;
+  }
+
+  .container-2 {
+    margin-top: 60px;
+    margin-bottom: 60px;
+    display: flex;
+    flex-direction: column;
+
+  }
+  .man-and-woman-images {
+    background-image: url(/Images/ali-kazal-OsMWWAL0saQ-unsplash\ kopi.jpg);
+    background-size: cover;
+    background-position: center;
+    height: 500px;
+    width: 100%;
+    padding: 40px;
+    margin-right: 20px;
+    margin-bottom: 20px;
+  }
+
+  .man-and-woman-images-two {
+    background-image: url(/Images/patrick-hendry-PQa5vHHnpm4-unsplash\ kopi.jpg);
+    background-size: cover;
+    background-position: center;
+    height: 500px;
+    width: 100%;
+    padding: 40px;
+  }
   
+  .container-3 {
+    background-color: #173D36;
+    display: flex;
+    flex-direction: column;
+    padding-left: 40px;
+
+  }
+
+  .illustration-mountains{
+    padding: 20px;
+  }
+
+  .footer {
+    background-color: #EA543B;
+    padding: 40px;
+  }
+
+  .logo-footer {
+    height: 45px;
+    width: auto;
+   }
+
+
+  @media (min-width: 600px) {
+    nav {
+      display: block;
+      position: static;
+    }
+
+    .ham-menu-icon {
+      display: none;
+    }
+
+    nav a {
+      display: inline-block;
+      padding: 10px;
+    }
+
+    .container {
+      grid-template-columns: repeat(2,1fr);
+    
+    }
+
+    .container-2 {
+      flex-direction: row;
+    }
+
+    .container-3 {
+      flex-direction: row;
+    }
+  }
+
+  @media (min-width: 800px) {
+    .container {
+      grid-template-columns: repeat(4,1fr);
+    
+    }
+  }

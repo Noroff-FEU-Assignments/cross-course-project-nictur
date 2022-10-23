@@ -4,26 +4,34 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=>, initial-scale=1.0">
-    <link href="styles.css" rel="stylesheet">
     <title>Rainy Days</title>
+    <link href="styles.css" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/28170cd640.js" crossorigin="anonymous"></script>
+    
 </head>
+
 <body>
     <header>
-        <a href="index.html" class="logo"> Rainy Days</a>
-        <nav>
+        <input type="checkbox" id="menu-checkbox">
+        <label for="menu-checkbox" class="ham-menu-icon"> <i class="fa-solid fa-bars"></i>"</label>
+        <nav class="navbar-container">
+            <a href="index.html"> <img src="Images/R_logo_02.svg" class="logo"></a>
             <a href="index.html" class="current"> Home</a>
             <a href="jackets.html"> Jackets</a>  
             <a href="about.html"> About</a>
-            <a href="cart.html"> Shopping Cart</a>   
+            <a href="cart.html" class="cta"> Shopping Cart</a>   
 
         </nav>
-
-    </header>
-    <main>
-        <section class="Hero Section">
-            <h1>Pushing the comfort zone</h1>
-            <a href="jackets.html" class="cta"> View our jackets</a>  
+     </header>
+    
+     <main>
+        <section class="Hero-Section">
+            <div class="Hero-content">
+                <h1>Pushing the comfort zone</h1>
+                <a href="jackets.html" class="cta"> View our jackets</a>  
+            </div>  
         </section>
+        
         <section>
             <div>
                 <h2>Jackets for him and her</h2>
@@ -31,60 +39,69 @@
             </div>
         </section>
 
-        <section class="products">
-            <div>
-                <img src="images/RainyDays_Jacket1.png" alt="first watch jacket orange" />
+        <section class="container">
+            <div class="product-item">
+                <img src="images/RainyDays_Jacket1.png" alt="first watch jacket orange" class="image-items"/>
                 <h4>Name of product</h4>
                 <p class="paragraph-one">Type of product</p>
+                <p>1200,-</p>
             </div>
-            <div>
-                <img src="Images/RainyDays_Jacket2.png" alt="Scott jacket dark grey" />
+
+            <div class="product-item">
+                <img src="Images/RainyDays_Jacket2.png" alt="Scott jacket dark grey" class="image-items"/>
                 <h4>Name of product</h4>
                 <p class="paragraph-one">Type of product</p>
+                <p>1200,-</p>
             </div>
-            <div>
-                <img src="Images/RainyDays_Jacket3.png" alt="Red bike jacket" />
+            
+            <div class="product-item">
+                <img src="Images/RainyDays_Jacket3.png" alt="Red bike jacket" class="image-items"/>
                 <h4>Name of product</h4>
                 <p class="paragraph-one">Type of product</p>
+                <p>1200,-</p>
             </div>
-            <div>
-                <img src="Images/RainyDays_Jacket7.png" alt="Patagonia fleece green" />
+            
+            <div class="product-item">
+                <img src="Images/RainyDays_Jacket7.png" alt="Patagonia fleece green" class="image-items"/>
                 <h4>Name of product</h4>
                 <p class="paragraph-one">Type of product</p>
+                <p>1200,-</p>
             </div>
+        </section>
+
+        <section class="product-cta">
             <a href="jackets.html" class="cta"> View our jackets</a>
         </section>
-        <section class="type og jackets">
-            <div>
-                <img src="Images/ali-kazal-OsMWWAL0saQ-unsplash kopi.jpg" alt="woman stadning gazing out the horizon">
-                <h1 class="heading on image"> Woman's jackets</h1>
+        
+        <section class="container-2">
+            <div class="man-and-woman-images">
+                <h5 class="heading-on-image"> Woman's jackets</h5>
             </div>
-            <div>
-                <img src="Images/patrick-hendry-PQa5vHHnpm4-unsplash kopi.jpg" alt="Man walking in red jacket">
-                <h1 class="heading on image"> Men's Jackets</h1>
+            <div class="man-and-woman-images-two">
+                <h5 class="heading-on-image"> Men's Jackets</h5>
             </div>
         </section>
-        <section class="intro--days">
+        
+        <section class="container-3">
             <div>
                 <h1 class="negative-heading">Rainy Days was established in 1998</h1>
                 <p class="negative-paragraph">Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud </p>
                 <a href="about.html" class="cta-negative"> Read more</a>
             </div>
-            <div>
+            <div class="illustration-mountains">
                 <img src="images/illustration.png">
             </div>
         </section>
 
-
-
     </main>
+
     <footer>
         <Section class="footer section">
             <div>
                 <h2>Pushing the comfort zone</h2>
             </div>
             <div>
-                <img src="Images/R_logo_02.png">
+                <img src="Images/R_logo_02.svg" class="logo-footer">
                 <p>Adress road 1, 000 OSLO</p>
                 <p>service@rainydays.com</p>
             </div>
