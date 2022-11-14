@@ -139,6 +139,12 @@
     color: #FFFFFF;
   }
 
+  .product-cta {
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
   .container {
     display: grid;
     grid-template-columns: repeat(1fr);
@@ -176,6 +182,7 @@
     background-image: url(/Images/ali-kazal-OsMWWAL0saQ-unsplash\ kopi.jpg);
     background-size: cover;
     background-position: center;
+    border-radius: 12px;
     height: 500px;
     width: 100%;
     padding: 40px;
@@ -187,6 +194,7 @@
     background-image: url(/Images/patrick-hendry-PQa5vHHnpm4-unsplash\ kopi.jpg);
     background-size: cover;
     background-position: center;
+    border-radius: 12px;
     height: 500px;
     width: 100%;
     padding: 40px;
@@ -196,7 +204,7 @@
     background-color: #173D36;
     display: flex;
     flex-direction: column;
-    padding-left: 40px;
+    padding: 20px;
 
   }
 
