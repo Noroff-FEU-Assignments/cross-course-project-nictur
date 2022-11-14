@@ -140,7 +140,7 @@
   }
 
   .product-cta {
-    padding: 20px;
+    padding: 40px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -178,10 +178,19 @@
     flex-direction: column;
 
   }
-  .man-and-woman-images {
+ 
+  .link-block-one {
     background-image: url(/Images/ali-kazal-OsMWWAL0saQ-unsplash\ kopi.jpg);
     background-size: cover;
     background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    color: #FFFFFF;
+    font-family: "AlmarenaDisplayBold";
+    font-weight: 300;
+    font-size: 5em;
     border-radius: 12px;
     height: 500px;
     width: 100%;
@@ -190,14 +199,25 @@
     margin-bottom: 20px;
   }
 
-  .man-and-woman-images-two {
+  .link-block-two{
     background-image: url(/Images/patrick-hendry-PQa5vHHnpm4-unsplash\ kopi.jpg);
     background-size: cover;
     background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    color: #FFFFFF;
+    font-family: "AlmarenaDisplayBold";
+    font-weight: 300;
+    font-size: 5em;
     border-radius: 12px;
     height: 500px;
     width: 100%;
     padding: 40px;
+    margin-right: 20px;
+    margin-bottom: 20px;
+
   }
   
   .container-3 {
