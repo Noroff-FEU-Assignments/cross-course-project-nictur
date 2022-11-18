@@ -76,6 +76,11 @@
       font-size: 20px;
     }
 
+    nav a:hover{
+      color: #EA543B;
+      text-decoration: underline;
+    }
+
     nav {
       position: absolute;
       background-color: #173D36;
@@ -225,7 +230,9 @@
     margin-right: 20px;
     margin-bottom: 20px;
   }
-
+  .link-block-one:hover {
+    background-color: #173D36;
+  }
   .link-block-two{
     background-image: url(/Images/patrick-hendry-PQa5vHHnpm4-unsplash\ kopi.jpg);
     background-size: cover;
@@ -283,8 +290,10 @@
 
     nav a {
       display: inline-block;
-      padding: 10px;
+      padding: 10px; 
     }
+
+    
 
     .container {
       grid-template-columns: repeat(2,1fr);
