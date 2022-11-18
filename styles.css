@@ -171,6 +171,12 @@
     color: #FFFFFF;
   }
 
+  .cta:hover{
+    background-color: #173D36;
+    border-radius: 5px;
+  
+  }
+
   .product-cta {
     padding: 40px;
     display: flex;
@@ -231,8 +237,10 @@
     margin-bottom: 20px;
   }
   .link-block-one:hover {
-    background-color: #173D36;
+    text-decoration: underline;
+    color: #EA543B;
   }
+  
   .link-block-two{
     background-image: url(/Images/patrick-hendry-PQa5vHHnpm4-unsplash\ kopi.jpg);
     background-size: cover;
@@ -252,6 +260,11 @@
     margin-right: 20px;
     margin-bottom: 20px;
 
+  }
+
+  .link-block-two:hover{
+    text-decoration: underline;
+    color: #EA543B;
   }
   
   .container-3 {
