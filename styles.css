@@ -1,7 +1,31 @@
 @font-face {
-    font-family: "AlmarenaDisplayBold";
-    src: url('webFonts/AlmarenaDisplayBold/font.woff2') format('woff2'), url('webFonts/AlmarenaDisplayBold/font.woff') format('woff');
-  }
+  font-family: "AlmarenaDisplayLight";
+  src: url('webFonts/AlmarenaDisplayLight/font.woff2') format('woff2'), url('webFonts/AlmarenaDisplayLight/font.woff') format('woff');
+}
+@font-face {
+  font-family: "AlmarenaLight";
+  src: url('webFonts/AlmarenaLight/font.woff2') format('woff2'), url('webFonts/AlmarenaLight/font.woff') format('woff');
+}
+@font-face {
+  font-family: "AlmarenaRegular";
+  src: url('webFonts/AlmarenaRegular/font.woff2') format('woff2'), url('webFonts/AlmarenaRegular/font.woff') format('woff');
+}
+@font-face {
+  font-family: "AlmarenaDisplayBold";
+  src: url('webFonts/AlmarenaDisplayBold/font.woff2') format('woff2'), url('webFonts/AlmarenaDisplayBold/font.woff') format('woff');
+}
+@font-face {
+  font-family: "AlmarenaDisplayRegular";
+  src: url('webFonts/AlmarenaDisplayRegular/font.woff2') format('woff2'), url('webFonts/AlmarenaDisplayRegular/font.woff') format('woff');
+}
+@font-face {
+  font-family: "AlmarenaBold";
+  src: url('webFonts/AlmarenaBold/font.woff2') format('woff2'), url('webFonts/AlmarenaBold/font.woff') format('woff');
+}
+@font-face {
+  font-family: "AlmarenaMonoDisplayLight";
+  src: url('webFonts/AlmarenaMonoDisplayLight/font.woff2') format('woff2'), url('webFonts/AlmarenaMonoDisplayLight/font.woff') format('woff');
+}
     
    h1 {
       font-family: "AlmarenaDisplayBold";
@@ -34,7 +58,10 @@
       text-align: center;
 
     }
-
+  .navbar-container {
+    display: block;
+    text-align: right;
+  }
     nav,
     #menu-checkbox {
       display: none;
@@ -72,7 +99,7 @@
     }
 
   body {
-      font-family: "Roboto", Verdana, Geneva, Tahoma, sans-serif
+      font-family: "Almarena", Verdana, Geneva, Tahoma, sans-serif
   }
   
   .Hero-Section {
@@ -225,6 +252,7 @@
     display: flex;
     flex-direction: column;
     padding: 20px;
+    overflow: hidden;
 
   }
 
