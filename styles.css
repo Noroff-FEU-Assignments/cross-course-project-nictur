@@ -122,6 +122,36 @@
     left: 100px;
   }
 
+ .Hero-Section-jackets {
+  background-image: url(/Images/julian-bialowas-ilkTnuMunP8-unsplash.jpg);
+  background-size: cover;
+  background-position-x: center;
+  background-repeat: no-repeat;
+  min-height: 75vh;
+  position: relative
+ }
+
+ .Hero-content-jackets{
+  position: absolute;
+    top: 100px;
+    left: 100px;
+ }
+
+ .Hero-Section-about{
+  background-image: url(/Images/iStock-1284556476.jpg);
+  background-size: cover;
+  background-position-x: center;
+  background-repeat: no-repeat;
+  min-height: 75vh;
+  position: relative
+ }
+
+ .Hero-content-about {
+  position: absolute;
+  top: 100px;
+  left: 100px;
+ }
+
   .paragraph-one {
     font-family: "Almarena";
     font-size: 16px;
@@ -190,6 +220,14 @@
     
   }
 
+  .container-bestselger {
+    display: grid;
+    grid-template-columns: repeat(1fr);
+    background-color: #F8B6AA;
+    margin-bottom: 40px;
+    padding: 20px;
+  }
+
   .image-items {
     width: 100%;
     max-width: 1000px;
@@ -208,7 +246,10 @@
     margin-bottom: 20px;
     margin-left: 20px;
   }
-
+  .product-item:hover {
+    text-decoration: underline;
+    color: #EA543B;
+  } 
   .container-2 {
     margin-top: 60px;
     margin-bottom: 60px;
@@ -280,6 +321,24 @@
     padding: 20px;
   }
 
+  .man-walking-on-lumber{
+    background-image: url(/Images/iStock-525336436.jpg);
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    height: auto;
+    width: auto;
+    padding: 10px;
+   }
+
+   .our-heritage{
+    padding: 40px;
+   }
+
+   .large-quote{
+    font-size: 3em
+   }
+
   .footer {
     background-color: #EA543B;
     padding: 40px;
@@ -311,7 +370,12 @@
     .container {
       grid-template-columns: repeat(2,1fr);
     
-    }
+    } 
+    
+    .container-bestselger {
+      grid-template-columns: repeat(2,1fr);
+    
+    } 
 
     .container-2 {
       flex-direction: row;
