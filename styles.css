@@ -169,24 +169,22 @@
 
  .contact-columns {
   display: flex;
+  flex-direction: column;
  }
 
  .contact-form {
-  background-color: #173D36;
   flex: 2;
   padding: 10px;
   margin: 10px;
  }
 
  .HQ-row-one {
-  background-color: #F8B6AA;
   flex: 1;
   padding: 10px;
   margin: 10px;
  }
 
  .HQ-row-two {
-  background-color: beige;
   flex: 1;
   padding: 10px;
   margin: 10px;
@@ -381,6 +379,50 @@
     font-size: 3em
    }
 
+   .cta-get-direction{
+    text-decoration: underline;
+    font-family: "AlmarenaDisplayBold";
+    font-size: 20px;
+    font-weight: 600;
+    color:#EA543B
+   }
+
+   .HQ-headings {
+    text-align: left;
+    font-family: "AlmarenaDisplayBold";
+    font-weight: 600;
+   }
+
+   .form__input{
+    display: block;
+    margin: 10px;
+   }
+
+   .form__fieldset{
+    border-radius: 6px;
+    padding: 10px;
+    background-color: #c9dbd8;
+    font-family: "AlmarenaDisplayBold";
+    font-size: 18px;
+   }
+
+   .Submit_cta{
+    padding: 5px;
+    background-color:#EA543B;
+    border-radius: 3px;
+    border-color: #EA543B;
+    text-align: center;
+    text-decoration: none;
+    color: #FFFFFF;
+    font-family: "AlmarenaDisplayBold";
+    font-size: 18px;
+  }
+
+  .Submit_cta:hover {
+    background-color: #173D36;
+    border-color: #173D36;
+  }
+
   .footer {
     background-color: #EA543B;
     padding: 40px;
@@ -424,6 +466,10 @@
     }
 
     .container-3 {
+      flex-direction: row;
+    }
+
+    .contact-columns{
       flex-direction: row;
     }
   }
