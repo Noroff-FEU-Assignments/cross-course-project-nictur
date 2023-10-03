@@ -592,6 +592,7 @@
     padding: 30px;
     align-items: center;
     text-align: center;
+    
   }
   
   .textfield {
@@ -613,6 +614,7 @@
     color: azure;
     margin: auto;
     margin-top: 60px;
+    font-weight: bold;
 }
 
 .footer-columns {
