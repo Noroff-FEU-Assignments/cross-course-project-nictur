@@ -117,7 +117,7 @@
 
 .current{
   font-weight: bold;
-  text-decoration-color: #9747FF;
+  color: #9747FF;
   text-decoration: underline;
 }
 
@@ -377,15 +377,16 @@
 
   .cta {
     background-color: #EA543B;
-    padding-left: 10px;
-    padding-right: 10px;
-    padding-top: 12px;
-    padding-bottom: 12px;
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-top: 14px;
+    padding-bottom: 16px;
     border-radius: 5px;
-    font-size: 14pt;
+    font-size: 16pt;
     font-weight: bold;
     text-decoration: none;
     color: #FFFFFF;
+    font-variant-caps: all-small-caps;
   }
 
   .cta:hover{
@@ -586,7 +587,7 @@
     display: grid;
     grid-template-columns: 1fr;
     padding: 40px;
-    background-color: #173D36;
+    background-color: #040404;
     color: azure;
     margin: auto;
     margin-top: 60px;
