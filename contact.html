@@ -11,19 +11,20 @@
 </head>
 
 <body>
-    <header>
-        <input type="checkbox" id="menu-checkbox">
-        <label for="menu-checkbox" class="ham-menu-icon"> <i class="fa-solid fa-bars"></i></label>
-        <nav class="navbar-container">
-            <a href="index.html"> <img src="Images/R_logo_02.svg" class="logo"></a>
-            <a href="index.html" class="current"> Home</a>
-            <a href="jackets.html"> Jackets</a>  
-            <a href="about.html"> About</a>
-            <a href="contact.html"> Contact</a>
-            <a href="cart.html" class="cta"> Shopping Cart</a>   
-
+    <header class="nav-container">
+        <a href="index.html"><img class="logo" src="/Images/R_logo_02.png" alt="CSM-Logo"></a>
+        <label for="hamburger-menu" class="burger-menu">Menu</label>
+        <input type="checkbox" id="hamburger-menu">
+        <nav class="nav">
+          <ul class="nav-links">
+              <li><a href="jackets.html">Jackets</a></li>
+              <li><a href="about.html">About</a></li>
+              <li class="current"><a href="contact.html">Contact</a></li>
+          </ul>
+          <a href="contact.html" class="cta-contact-nav">Contact</a>
         </nav>
-     </header>
+        <a href="contact.html" class="cta-contact">Contact</a>
+      </header>
     
      <main>
         <section class="Hero-Section-contact">

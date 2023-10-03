@@ -1,58 +1,51 @@
+/*regular version*/
 @font-face {
-  font-family: "AlmarenaDisplayLight";
-  src: url('webFonts/AlmarenaDisplayLight/font.woff2') format('woff2'), url('webFonts/AlmarenaDisplayLight/font.woff') format('woff');
+  font-family: 'TomatoGrotesk';
+  src: url(/Fonts/TomatoGrotesk-Regular.otf)
+  format('opentype');
 }
+
+/*bold version*/
 @font-face {
-  font-family: "AlmarenaLight";
-  src: url('webFonts/AlmarenaLight/font.woff2') format('woff2'), url('webFonts/AlmarenaLight/font.woff') format('woff');
+  font-family: 'TomatoGrotesk';
+  src: url(/Fonts/TomatoGrotesk-SemiBold.otf)
+  format('opentype');
+  font-weight: bold;
 }
+
+/*light version*/
 @font-face {
-  font-family: "AlmarenaRegular";
-  src: url('webFonts/AlmarenaRegular/font.woff2') format('woff2'), url('webFonts/AlmarenaRegular/font.woff') format('woff');
+  font-family: 'TomatoGrotesk';
+  src: url(/Fonts/TomatoGrotesk-ExtraLight.otf)
+  format('opentype');
+  font-weight: light;
 }
-@font-face {
-  font-family: "AlmarenaDisplayBold";
-  src: url('webFonts/AlmarenaDisplayBold/font.woff2') format('woff2'), url('webFonts/AlmarenaDisplayBold/font.woff') format('woff');
-}
-@font-face {
-  font-family: "AlmarenaDisplayRegular";
-  src: url('webFonts/AlmarenaDisplayRegular/font.woff2') format('woff2'), url('webFonts/AlmarenaDisplayRegular/font.woff') format('woff');
-}
-@font-face {
-  font-family: "AlmarenaBold";
-  src: url('webFonts/AlmarenaBold/font.woff2') format('woff2'), url('webFonts/AlmarenaBold/font.woff') format('woff');
-}
-@font-face {
-  font-family: "AlmarenaMonoDisplayLight";
-  src: url('webFonts/AlmarenaMonoDisplayLight/font.woff2') format('woff2'), url('webFonts/AlmarenaMonoDisplayLight/font.woff') format('woff');
-}
+
+
     
    h1 {
-      font-family: "AlmarenaDisplayBold";
       font-size: 50pt;
       color: #FFFFFF;
     }
     
     h2 {
-        font-family: "AlmarenaDisplayBold";
         font-size: 38pt;
         text-align: center;
     }
   
     h3 {
-        font-family: "AlmarenaDisplayBold";
-        font-weight: 500;
+        font-weight: Bold;
         font-size: 20pt;
         text-align: left;
     }
 
     h4 {
-        font-family: "AlmarenaDisplayBold";
+        font-family: 'TomatoGrotesk';
         font-size: 16pt;
     }
 
     h5 {
-      font-family: "AlmarenaDisplayBold";
+      font-family: 'TomatoGrotesk';
       font-size: 50pt;
       color: #FFFFFF;
       text-align: center;
@@ -122,12 +115,18 @@
   color: #9747FF;
 }
 
+.current{
+  font-weight: bold;
+  text-decoration-color: #9747FF;
+  text-decoration: underline;
+}
+
 .cta-contact {
   display: none;
   background-color: black;
   color: white;
   text-decoration: none;
-  font-size: 18px;
+  font-size: 16px;
   padding: 10px 16px;
   border-radius: 6px;
   text-align: center;
@@ -144,7 +143,7 @@
   background-color: black;
   color: white;
   text-decoration: none;
-  font-size: 18px;
+  font-size: 16px;
   padding: 10px 16px;
   border-radius: 6px;
   text-align: center;
@@ -182,7 +181,7 @@
 }
 
   body {
-      font-family: "Almarena", Verdana, Tahoma, sans-serif
+      font-family: 'TomatoGrotesk', Verdana, Tahoma, sans-serif;
   }
   
   .global-shipping {
@@ -370,9 +369,8 @@
     padding-top: 12px;
     padding-bottom: 12px;
     border-radius: 5px;
-    font-size: 16pt;
-    font-family: "Almarena";
-    font-weight: 400;
+    font-size: 14pt;
+    font-weight: bold;
     text-decoration: none;
     color: #173D36;
   }
@@ -384,9 +382,8 @@
     padding-top: 12px;
     padding-bottom: 12px;
     border-radius: 5px;
-    font-size: 16pt;
-    font-family: "Almarena";
-    font-weight: 400;
+    font-size: 14pt;
+    font-weight: bold;
     text-decoration: none;
     color: #FFFFFF;
   }
