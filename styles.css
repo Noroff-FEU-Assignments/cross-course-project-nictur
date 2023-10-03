@@ -58,53 +58,131 @@
       text-align: center;
 
     }
-  .navbar-container {
-    display: block;
-    text-align: right;
+    .nav-container {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 10px;
   }
-    nav,
-    #menu-checkbox {
-      display: none;
-    }
 
-    nav a {
-      display: block;
-      color: #FFFFFF;
+  .nav {
+    display: none;
+    position: fixed;
+    top: 70px;
+    background-color: white;
+    z-index: 1000px;
+    right: 0px;
+    width: 100%;
+    text-align: center;
+    height: 100vh;
+}
+
+
+#hamburger-menu {
+  display: none;
+}
+
+#hamburger-menu:checked ~ nav {
+  display: block;
+}
+
+.burger-menu {
+  background-color: #13181F;
+  color: white;
+  text-decoration: underline;
+  padding: 10px;
+  border-radius: 6px;
+}
+
+.burger-menu:hover {
+  background-color: #9747FF;
+  transition: all 0.3s ease 0s;
+
+}
+
+.nav-links {
+  list-style: none;
+}
+
+.nav-links li {
+  display: block;
+  padding: 20px;
+  text-align: center;
+}
+
+.nav-links li a {
+  transition: all 0.2s ease 0s;
+  text-decoration: none;
+  color: black;
+  font-size: 18px;
+}
+
+.nav-links li a:hover {
+  text-decoration: underline;
+  color: #9747FF;
+}
+
+.cta-contact {
+  display: none;
+  background-color: black;
+  color: white;
+  text-decoration: none;
+  font-size: 18px;
+  padding: 10px 16px;
+  border-radius: 6px;
+  text-align: center;
+  margin-left: 18px;
+}
+
+.cta-contact:hover{
+  background-color: #9747FF;
+  transition: all 0.3s ease 0s;
+}
+
+.cta-contact-nav {
+  display: block;
+  background-color: black;
+  color: white;
+  text-decoration: none;
+  font-size: 18px;
+  padding: 10px 16px;
+  border-radius: 6px;
+  text-align: center;
+  margin-left: 18px;
+}
+
+.cta-contact-nav:hover {
+  background-color: #9747FF;
+  transition: all 0.3s ease 0s;
+}
+
+.nav-content a {
+      display: inline-block;
+      color: black;
       text-decoration: none;
-      padding-block: 10px;
-      font-family: "Almarena";
-      font-size: 20px;
-    }
+      font-size: 18px;
+      padding: 10px;
+      margin-left: 25px;
+}
 
-    nav a:hover{
-      color: #EA543B;
-      text-decoration: underline;
-    }
+.nav-content a:hover {
+  text-decoration: underline;
+  color: #9747FF;
+}
 
-    nav {
-      position: absolute;
-      background-color: #173D36;
-      padding: 20px 20px;
-      
-    }
+.current {
+  color: #9747FF;
+  font-weight: bold;
+}
 
-    header {
-      position: relative;
-      font-size: 1rem;
-    }
-
-    .logo {
-      width: auto;
-      height: 45px;
-    }
-
-    #menu-checkbox:checked ~ nav {
-      display: block;
-
-    }
+.logo {
+  width: auto;
+  height: 45px;
+  margin-right: auto;
+}
 
   body {
-      font-family: "Almarena", Verdana, Geneva, Tahoma, sans-serif
+      font-family: "Almarena", Verdana, Tahoma, sans-serif
   }
   
   .Hero-Section {
@@ -112,6 +190,7 @@
     background-size: cover;
     background-position-x: center;
     background-repeat: no-repeat;
+    z-index: -10;
     min-height: 75vh;
     position: relative;
   }
@@ -435,22 +514,7 @@
 
 
   @media (min-width: 600px) {
-    nav {
-      display: block;
-      position: static;
-    }
-
-    .ham-menu-icon {
-      display: none;
-    }
-
-    nav a {
-      display: inline-block;
-      padding: 10px; 
-    }
-
     
-
     .container {
       grid-template-columns: repeat(2,1fr);
     
