@@ -396,6 +396,23 @@
   
   }
 
+  .more-info-cta {
+    display: block;
+    background-color: black;
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+    padding: 10px 16px;
+    border-radius: 6px;
+    text-align: center;
+    margin-left: 18px;
+  }
+
+  .more-info-cta:hover{
+    background-color: #9747FF;
+    transition: all 0.3s ease 0s;
+  }
+
   .product-cta {
     padding: 40px;
     display: flex;
@@ -445,7 +462,6 @@
   }
   .product-item:hover {
     text-decoration: underline;
-    color: #EA543B;
   } 
   .container-2 {
     margin-top: 60px;
