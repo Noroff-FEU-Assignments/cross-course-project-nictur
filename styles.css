@@ -405,7 +405,6 @@
     padding: 10px 16px;
     border-radius: 6px;
     text-align: center;
-    margin-left: 18px;
   }
 
   .more-info-cta:hover{
@@ -428,9 +427,9 @@
     max-width: 1600px;
     display: grid;
     align-content: center;
-    grid-template-columns: repeat(1fr);
+    grid-template-columns: repeat(2,1fr);
     margin-bottom: 40px;
-    padding: 20px;
+    padding: 10px;
     
   }
 
@@ -447,22 +446,22 @@
     max-width: 1000px;
     margin: auto;
   }
-
+ 
   .product-item {
     flex: 2;
     min-height: fit-content;
     max-width: 450px;
     border-radius: 12px;
-    border-style: solid;
-    border-color: black;
-    background-color: #ffffff;
+    background-color: #eeede0;
     padding: 40px;
     margin-bottom: 20px;
     margin-left: 20px;
+    align-content: bottom;
   }
-  .product-item:hover {
-    text-decoration: underline;
-  } 
+ 
+  .product-image:hover{
+    opacity: 50%;
+  }
   .container-2 {
     margin-top: 60px;
     margin-bottom: 60px;
