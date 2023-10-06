@@ -1,17 +1,10 @@
-function openTab(tabName) {
-  
-    const tabContents = document.getElementsByClassName('tab-conent');
-      for (const content of tabContents) {
-        content.style.display = 'none';
-    }
-    
-    document.getElementById(tabName).style.display = 'block';
+const tabs = document.querySelectorAll('[data-tab-target')
+const tabContents = document.querySelectorAll('[data-tab-content]')
 
-    const tabButton = document.getElementsByClassName('tabbutton');
-    for (const button of tabButton) {
-        button.classList.remove('active');
-    }
-
-    event.currentTarget.classList.add('active');
-}
-
+tabs.forEach(tab => {
+    tab.addEventListener('click', () => {
+        const target = document.querySelector(tab.dataset.tabTarget)
+        tabContents.forEach(tabContent => tabContent.classList.remove('active'))
+        target.classList.add('active')
+    })
+})

@@ -548,37 +548,40 @@
 
   }
 
-  .tabs {
-    display: grid;
-    grid-template-columns: repeat(3,1fr);
-    align-content: center;
-    min-height: fit-content;
-    margin-bottom: 40px;
+  [data-tab-content] {
+    display: none;
+  }
+  .active[data-tab-content] {
+    display: block;
   }
 
- .tab-button{
-  padding: 10px 20px;
-  margin: 10px;
-  cursor: pointer;
-  border: none;
-  color: #FFFFFF;
-  background-color: #000000;
-  font-family:'TomatoGrotesk';
- }
+  .tab-menu{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    list-style-type: none;
+    margin: 0;
+    margin-bottom: 40px;
+    padding: 0;
+    justify-content: space-around;
+    text-align: center;
+  }
+  .tab-link{
+    padding: 10px 20px;
+    margin: 10px;
+    cursor: pointer;
+    border: solid;
+    border-radius: 3px;
+    color: #000000;
+    background-color: #fcfcfc;
+  }
 
- .tab-button:hover{
-  background-color: #EA543B;
-  transition: all 0.3s ease 0s;
-}
-
- .tab-content{
-  display: none;
-  
- }
-
- .active{
-  display: block;
- }
+  .tab-link:hover{
+    background-color: #EA543B;
+    color: #FFFFFF;
+    border: 1px solid;
+    border-color: #EA543B;
+    transition: all 0.3s ease 0s;
+  }
 
   .man-walking-on-lumber{
     background-image: url(/Images/iStock-525336436.jpg);
