@@ -88,7 +88,7 @@
 }
 
 .burger-menu:hover {
-  background-color: #9747FF;
+  background-color: #EA543B;
   transition: all 0.3s ease 0s;
 
 }
@@ -112,12 +112,12 @@
 
 .nav-links li a:hover {
   text-decoration: underline;
-  color: #9747FF;
+  color: #EA543B;
 }
 
 .current{
   font-weight: bold;
-  color: #9747FF;
+  color: #EA543B;
   text-decoration: underline;
 }
 
@@ -134,7 +134,7 @@
 }
 
 .cta-contact:hover{
-  background-color: #9747FF;
+  background-color: #EA543B;
   transition: all 0.3s ease 0s;
 }
 
@@ -151,7 +151,7 @@
 }
 
 .cta-contact-nav:hover {
-  background-color: #9747FF;
+  background-color: #EA543B;
   transition: all 0.3s ease 0s;
 }
 
@@ -166,11 +166,11 @@
 
 .nav-content a:hover {
   text-decoration: underline;
-  color: #9747FF;
+  color: #EA543B;
 }
 
 .current {
-  color: #9747FF;
+  color: #EA543B;
   font-weight: bold;
 }
 
@@ -390,7 +390,7 @@
   }
 
   .cta:hover{
-    background-color: #173D36;
+    background-color: #000000;
     border-radius: 5px;
     transition: all 0.3s ease 0s;
   
@@ -408,7 +408,26 @@
   }
 
   .more-info-cta:hover{
-    background-color: #9747FF;
+    background-color: #EA543B;
+    transition: all 0.3s ease 0s;
+  }
+
+  .submit-cta{
+    background-color: #000000;
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-top: 14px;
+    padding-bottom: 16px;
+    border-radius: 5px;
+    font-size: 16pt;
+    font-weight: bold;
+    text-decoration: none;
+    color: #FFFFFF;
+    font-variant-caps: all-small-caps;
+  }
+
+  .submit-cta:hover{
+    background-color: #EA543B;
     transition: all 0.3s ease 0s;
   }
 
@@ -450,7 +469,7 @@
   .product-item {
     flex: 2;
     min-height: fit-content;
-    max-width: 450px;
+    width: auto;
     border-radius: 12px;
     background-color: #eeede0;
     padding: 40px;
