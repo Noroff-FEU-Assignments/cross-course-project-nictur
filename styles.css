@@ -548,9 +548,37 @@
 
   }
 
-  .illustration-mountains{
-    padding: 20px;
+  .tabs {
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    align-content: center;
+    min-height: fit-content;
+    margin-bottom: 40px;
   }
+
+ .tab-button{
+  padding: 10px 20px;
+  margin: 10px;
+  cursor: pointer;
+  border: none;
+  color: #FFFFFF;
+  background-color: #000000;
+  font-family:'TomatoGrotesk';
+ }
+
+ .tab-button:hover{
+  background-color: #EA543B;
+  transition: all 0.3s ease 0s;
+}
+
+ .tab-content{
+  display: none;
+  
+ }
+
+ .active{
+  display: block;
+ }
 
   .man-walking-on-lumber{
     background-image: url(/Images/iStock-525336436.jpg);
@@ -717,6 +745,7 @@
       padding: 20px;
     
     }
+
     .cta-contact {
       display: block;
   }
