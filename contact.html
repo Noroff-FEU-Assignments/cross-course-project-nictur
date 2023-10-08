@@ -12,75 +12,58 @@
 
 <body>
     <header class="nav-container">
-        <a href="index.html"><img class="logo" src="/Images/R_logo_02.png" alt="CSM-Logo"></a>
         <label for="hamburger-menu" class="burger-menu">Menu</label>
         <input type="checkbox" id="hamburger-menu">
+        <a href="index.html"><img class="logo" src="/Images/R_logo_02.png" alt="Rainy days logo"></a>
         <nav class="nav">
           <ul class="nav-links">
               <li><a href="jackets.html">Jackets</a></li>
               <li><a href="about.html">About</a></li>
-              <li class="current"><a href="contact.html">Contact</a></li>
+              <li><a href="contact.html" class="current">Contact</a></li>
           </ul>
-          <a href="contact.html" class="cta-contact-nav">Contact</a>
+         
         </nav>
-        <a href="contact.html" class="cta-contact">Contact</a>
+        <a href="cart.html"><img class="cart-button" src="/Images/shoping-whitsvg.png"></a>
       </header>
     
      <main>
         <section class="Hero-Section-contact">
             <div class="Hero-content-contact">
-                <h1>We're happy to help</h1> 
-                <p class="negative-paragraph">Lorem ipsum dolor, dolore magna aliquam erat volutpat. Ut ad minim veniam, quis nostrud </p> 
+                <h2 class="text-align-center">We're happy to help</h2> 
+                <p class="text-align-center"><b>Fee free to drop us an email, dont hesitate.
+                    We're more than happy to help out!</b></p> 
             </div>  
         </section>
-        <section class="contact-columns">
-            <div class="contact-form">
-                <h3 class="HQ-headings">Contact us:</h3>
-                <form>
-                    <fieldset class="form__fieldset">
-                        <legend>Your contact details</legend>
-                        <label for="name">First Name</label>
-                        <input type="text" name="name" id="name" class="form__input">
-                        <label for="Last name">Last Name</label>
-                        <input type="text" name="Last name" id="Last name" class="form__input">
-                        <label for="Email">Email</label>
-                        <input type="text" name="Email" id="Email" class="form__input">
-                        <input value="Submit" class="Submit_cta">
-                    </fieldset>
-                </form>
-
+        <section class="contact-wrapper">
+            <div>
+                <h3>Please fill out the details below</h2>
+                    <div class="HQ-row-one">
+                        <h3 class="HQ-headings">Oslo, Norway</h3>
+                        <p>Adress road 1, 000 OSLO</p>
+                        <p>service@rainydays.com</p>
+                        <p>+47 220 00 002</p>
+        
+                        <a href="contact.html" class="submit-cta">Get directions</a>
+                    </div>
             </div>
-            <div class="HQ-row-one">
-                <h3 class="HQ-headings">Oslo, Norway</h3>
-                <p>Adress road 1, 000 OSLO</p>
-                <p>service@rainydays.com</p>
-                <p>+47 220 00 002</p>
+            <form method="post">
+                <div class="form-wrapper">
+                    <label for="name"> Full name</label>
+                    <input type="text" id="Name" name="Full name">
+                    <label for="email"> Email</label>
+                    <input type="text" id="Email" name="Email">
+                    <label for="phone"> Phonenumber</label>
+                    <input type="text" id="Phone" name="Phonenumber">
+                </div>
 
-                <a href="about.hmtl" class="cta-get-direction">Get directions >></a>
+                <div class="message-box">
+                    <label for="Message">Message</label>
+                    <textarea name="Message" id="" cols="30" rows="10"></textarea>
+                </div>
+                <input type="submit" value="send" class="submit-cta"> 
+            </form>
 
-                <h3 class="HQ-headings">Madrid, Spain</h3>
-                <p>Adress road 1, 000 Madrid</p>
-                <p>service@rainydays.com</p>
-                <p>+47 220 00 002</p>
-
-                <a href="about.hmtl" class="cta-get-direction">Get directions >></a>
-
-            </div>
-            <div class="HQ-row-two">
-                <h3 class="HQ-headings">London, UK</h3>
-                <p>Adress road 1, 000 OSLO</p>
-                <p>service@rainydays.com</p>
-                <p>+47 220 00 002</p>
-
-                <a href="about.hmtl" class="cta-get-direction">Get directions >></a>
-
-                <h3 class="HQ-headings">Liboa, Portugal</h3>
-                <p>Adress road 1, 000 OSLO</p>
-                <p>service@rainydays.com</p>
-                <p>+47 220 00 002</p>
-
-                <a href="about.hmtl" class="cta-get-direction">Get directions >></a>
-
+        </section>
             </div>
 
         </section>
