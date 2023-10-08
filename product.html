@@ -22,6 +22,12 @@
 </head>
 
 <body>
+    <div class="cart">
+        <h2>Shopping Cart</h2>
+        <ul class="cart-items">
+
+        </ul>
+    </div>
     <header class="nav-container">
         <label for="hamburger-menu" class="burger-menu">Menu</label>
         <input type="checkbox" id="hamburger-menu">
@@ -36,7 +42,7 @@
         </nav>
         <a href="cart.html"><img class="cart-button" src="/Images/shoping-whitsvg.png"></a>
       </header>
-    
+
      <main>
         <section class="global-shipping">
            <h3 class="h3-white">Free global shipping. So knock yourself out!</h3>
@@ -52,7 +58,9 @@
                 <div class="product-info2">
                     <div class="product-details-wrapper">
                         <div class="product-main-details">
-                            <h3>Unisex Fleece jacket</h3>
+                            <div class="cart-product">
+       
+                                <h3>Unisex Fleece jacket</h3>
                             <p class="product-price"><b>1300,-</b></p>
                             <p class="product-description">Discover our fleece jacket with organic and recycled materials, the unisex essential eco fleece is Crafted from premium 100% cotton fabric, its offer an ideal balance for indoor and outdoor adventures. </p>
                             <div class="sizes">
@@ -66,7 +74,9 @@
                                 <div class="color-swatch" data-variant="variant-darkolivegreen" style="background-color: darkolivegreen;"></div>
                                 <div class="color-swatch" data-variant="variant-blue" style="background-color: blue";></div>
                             </div>
-                            <button class="add-to-cart-button">Add to cart</button>
+                            <button class="add-to-cart">Add to cart</button>
+                            </div>
+                            
                         </div>
                     </div>
                 </div>
@@ -202,6 +212,6 @@
         </section>
     
     </footer>
-
+    <script src="script.js"></script>
 </body>
 </html>

@@ -15,4 +15,28 @@ tabs.forEach(tab => {
     })
 })
 
+//js for the cart
+const addToCartButtons = document.querySelectorAll('.add-to-cart');
+const cart = document.querySelector('.cart');
+const cartItems = document.querySelector('.cart-items');
+
+addToCartButtons.forEach(button => {
+    button.addEventListener('click', ()=> {
+        const product = button.parentElement;
+        const productName = product.querySelector('h2').textContent;
+
+        const cartItem = document.createElement('li');
+        cartItem.textContent = productName;
+        cartItems.appendChild(cartItem);
+
+        cart.style.right = '0';
+    })
+})
+
+document.addEventListener('click', (Event) => {
+    if(!cart.contains(EventTarget) && EventTarget !== cart){
+        cart.stye.right = '-300px';
+    }
+})
+
 

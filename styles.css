@@ -21,7 +21,18 @@
   font-weight: light;
 }
 
-
+/* Cart styles*/
+.cart{
+  position: fixed;
+  top: 0;
+  right: -300px;
+  width: 300px;
+  height: 100vh;
+  background-color: #b8b8b8;
+  box-shadow: -5px 0px 10px rgba(0, 0, 0, 0.2);
+  transition: right 0.3s ease;
+  overflow-y: scroll;
+}
     
    h1 {
       font-size: 50pt;
@@ -886,7 +897,7 @@ textarea {
     height: 55vh;
   }
 
-  .add-to-cart-button{
+  .add-to-cart{
     background-color: #EA543B;
     color: #FFFFFF;
     border: 1px solid #EA543B;
@@ -897,7 +908,7 @@ textarea {
     cursor: pointer;
   }
 
-  .add-to-cart-button:hover{
+  .add-to-cart:hover{
     background-color: #000000;
     border: 1px solid #000000;
     color: #FFFFFF;
